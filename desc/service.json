@@ -1,0 +1,30 @@
+{
+  "name": "MOOSE",
+  "version": "0.1.0",
+  "keywords": [
+    "segmentation",
+    "tissues"
+  ],
+  "shortdesc": "Run MOOSE",
+  "longdesc": "Use MOOSE to obtain a range of tissue segmentations from clinical ct scans",
+  "tags": [
+    {
+      "name": "Target",
+      "type": "MainImage",
+      "hint": "The anatomical image onto which you want to warp the segmentation",
+      "required": true
+    },
+    {
+      "name": "Source",
+      "type": "OverlayImage",
+      "hint": "The anatomical image from which you want to warp the segmentation",
+      "required": true
+    },
+    {
+      "name": "SourceSeg",
+      "type": "OverlayImage",
+      "hint": "The segmentation of the source image",
+      "required": true
+    }
+  ]
+}
